@@ -126,6 +126,18 @@
     flex-wrap: wrap;
 }
 
+.Menu-Social-Col-Flex-Ct{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
 .modalcolv2{
     width: 30%;
     min-width: 300px;
@@ -146,11 +158,9 @@
     top: 20px;
 }
 
-.Moto-Social-ct{
-    position: absolute;
+.Moto-Social-ct{  
     width: 100%;
     height: 20%;
-    bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +171,6 @@
     height: 100px;
     position: absolute;
     left: 7.5%;
-    bottom: 50px;
     font-size: 2rem;
     background-color: transparent;
     display: flex;
@@ -169,19 +178,13 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 1061px){
+@media only screen and (max-width: 965px){
     .motocontainer{
-        bottom: 1rem;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    .motocontainer{
-        position: fixed;
+        position: absolute;
         left: auto;
         width: 50%;
-        top: 11rem;
-        right: 1rem;
+        top: 5rem;
+        right: 0rem;
         font-size: 1.5rem;
         text-align: right;
     }
@@ -258,20 +261,23 @@
 }
 
 
-@media only screen and (max-width: 1061px){
+@media only screen and (max-width: 965px){
     .social-container-menuv2{
-        bottom: 1rem;
-        right: 1rem;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    .social-container-menuv2{
-        position: fixed;
+        position: absolute;
         width: 50%;
-        top: 40%;
+        top: 20rem;
         right: 1rem;
         text-align: right;
+
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+    .social-container-menuv2{
+        position: absolute;
+        width: 70%;
+        top: 15rem;
 
     }
 
@@ -528,7 +534,7 @@
     margin-top:10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 965px){
     .modal-content-centeredv2{
         display: none;
     }
