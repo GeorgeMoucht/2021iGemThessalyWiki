@@ -1,0 +1,589 @@
+/*List
+1. PreLoader
+2. MainMenu
+3. NavigationMenu on Left
+4. Right Side Bar from Container Context
+5. Context
+6. Index Content Template
+7. Toggle Menu
+8. 100% Video index
+*/
+
+html{
+    scroll-behavior:smooth;
+    animation-timing-function: ease-out;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ====== preLoader =======*/
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#0061FF ,#60EFFF );    overflow: hidden;
+    position: fixed;
+    transition-timing-function: cubic-bazier(0.19, 1, 0.22, 1);
+    z-index: 99999;
+}
+
+#text{
+    color: white;
+    font-size: 20px;
+    margin-top: 300px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    display:flex;
+    justify-content: center;
+}
+
+#textLoad{
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    display:flex;
+    justify-content: center;
+}
+
+.All{ /* All COntent */
+    width: 100%;
+    height: 100vh;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+/*====== MainMenu=========*/
+.MainMenu{
+    width: 100%;
+    position:fixed;
+    background-color: #555;   
+    top: 0; 
+    z-index: 10;
+}
+.nav-brand{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+.nav-brand-logo {
+    padding-top: .5rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    width: 60px;
+    height: 110px;
+    background-color:#555;
+    transform: rotate(0deg);
+    border-radius: 30%;
+
+
+}
+
+.brand-icon {
+    transform: rotate(0deg);
+    padding-left: .3rem;
+}
+.nav-list ul {
+    margin: .29rem;
+}
+.nav-list ul li{
+    float: left !important;
+    display: block;
+    color: #d1d1d1;
+    text-decoration: none;
+    padding: 0px 16px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.nav-list ul li a:hover {
+    color:#60EFFF;
+}
+.nav-list ul li a:active {
+    color: #0061FF;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+}
+
+.dropdown-content a{
+    color: black; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+/*======= Left Navigation Menu========= */
+
+
+.NavigationContainer{
+    top: 100px;
+    width: 15%;
+    height: 100%;
+    object-fit:contain;
+    position: fixed;
+}
+
+.NavLogo{
+    width: 100%;
+    margin-top: 1rem;
+    height: 15%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.NavLogo img{
+    width: 100px;
+    height: auto;
+}
+
+.NavigationMenuContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid black ;
+}
+
+.NavigationLinks{
+    height: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-right: solid black;
+    margin-top: 1rem;
+}
+
+.NavigationLinks a{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+.NavigationPageName{
+    position: absolute;
+    margin-bottom: 34rem;
+    margin-right: 5rem;
+  }
+
+.NavigationLinks ul{
+    background-color: transparent;
+    list-style-type: none;
+}
+
+.NavigationLinks ul li a.active{
+    color: rgb(119, 10, 10);
+    background-color: white;
+
+}
+  /* Right Side Bar from Container Context */
+  .RightSideBar{
+    width: 15%;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+
+
+/*======= Context123 ========*/
+
+
+.ContainerNavigationContext{
+    width: 100vw;
+    height: auto;
+}
+
+.ContainerContext{
+    width: 70%;
+    height: auto;
+    background-color: yellow;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.ContextBody{
+    width: 90%;
+    height: auto;
+    background-color: green;
+    margin-top: 1rem;
+}
+
+.ConTitle{
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    font-size: 3rem;
+}
+.Context{
+    width: 90%;
+    height: auto;
+    background-color: blue;
+    font-size: 3rem;
+}
+
+/*=====Index Content Template ========*/
+
+.main-ct{
+    background: rgb(163,198,255);
+    background: linear-gradient(0deg, rgba(163,198,255,1) 0%, rgb(243, 243, 243) 25%, rgb(243, 243, 243)75%, rgba(163,198,255,1) 100%);
+    justify-content: center;
+    
+}
+.main-ct2{
+    background: rgb(254,245,180);
+background: linear-gradient(90deg, rgba(254,245,180,1) 0%, rgb(247, 247, 247) 25%, rgb(247, 247, 247) 75%, rgba(96,239,255,1) 100%);
+    justify-content: center;
+    height: 100vh;
+    
+}
+.main-ct3{
+    background: rgb(248,153,125);
+    background: linear-gradient(209deg, rgba(248,153,125,1) 0%, rgb(240, 240, 240) 25%, rgb(240, 240, 240) 75%, rgba(96,239,255,1) 100%, rgba(96,239,255,1) 100%);
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.main-content{
+    width: 75%;
+    height: 100%;
+    background: transparent;
+    float: center;
+}
+
+.par{
+    width: 100%;
+    height: 400px;
+}
+
+/*======= TOGGLE MENU ======*/
+
+.ToggleMenu{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+ 
+}
+
+
+
+/* Container Toggle Menu */
+.ct-tm{
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    background-color: white;
+
+}
+
+.menucirc1{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    left: -20px;
+    background-color: white;
+}
+
+.menucirc2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    right: -20px;
+    background-color: white;
+}
+
+.toggleX{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    animation-name: haha;
+    animation-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* Toggle Menu Trigger Button */
+.row1, .row2, .row3{
+    background: black;
+    height: 3px;
+    width: 100%;
+    margin-top: 1px;
+    transition: 0.4s;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden;
+}
+  
+  /* Modal Content */
+.modal-content {
+  
+    background-color: red;
+    border: 1px solid #888;
+    width: 230px;
+    height: 100vh;
+    padding-top: 30px ;
+    z-index: 1;
+    animation: fadeIn 1s;
+    margin: 0;
+}
+
+.modal-content a {
+    color: green;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+#more  {
+    display: none;
+}
+
+
+
+
+#TextBox.open {
+    transform: translateY(0);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+#TextBox.open {
+    transform: translateY(0);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+#TextBox {
+    transition: transform 0.35s, clip-path 0.35s;
+    text-align: left;
+    margin: 10px;
+}
+
+#TextBox {
+    transition: transform 0.35s, clip-path 0.35s;
+    text-align: left;
+    margin: 10px;
+}
+
+/* Toggle Menu Opens Animation */
+@keyframes fadeIn {
+    0% {opacity:0; transform: translate(-200px,0px);}
+    100% {opacity:1; transform: translate(0px,0px);}
+}
+
+@keyframes OpenMenu{
+    0% {left: 0px;}
+    100% {left:100px}
+}
+
+@keyframes MoveRight{
+    0% {left: 0px;}
+    100% {left:100px}
+}
+
+@keyframes haha{
+    0% {opacity: 0;}
+    99% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoImg {
+    height: 100px;
+    width: auto;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+
+/*li menu */
+.li-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.li-menu a{
+    padding-left: 8px 16px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #dddddd; 
+    height: 70px;
+}
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+/* Change the link color on hover */
+.li-menu a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  @media  screen and (max-width: 1024px){
+      .modal-content{
+          width: 18%;
+      }
+
+       .li-menu a{
+        font-size: 20px;   
+
+       }      
+  }
+
+  @media screen and (max-width: 768px){
+      .modal-content{
+          width: 30%;
+      }
+  }
+
+  @media screen and (max-width: 425px){
+      .modal-content{
+          width: 52%;
+      }
+
+      .li-menu a{
+          font-size: 15px;
+      }
+  }
+
+  /* Toggle Menu X animation */
+
+  .change .row1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .row2 {opacity: 0;}
+  
+  .change .row3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  /*===== 100% Video Index======= */
+#indexVideo{
+    position: fixed;
+    left: 0;
+    top : 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.else{
+    width: 100%;
+
+}
+
+.test{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.bg1{
+    display: block;
+}
+
+.bg2{
+    display: none;
+}
+@media only screen and (max-width: 1024px){  
+    .test video{
+        top: 0;
+        left: 0;
+        position: absolute;        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .bg1{
+        display: none;
+    }
+    .bg2{
+        display: block;
+    }
+}
+
+
+.menuButton{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: #000 solid 1px;
+    font-family: 'Ubuntu';
+    cursor: pointer;
+}

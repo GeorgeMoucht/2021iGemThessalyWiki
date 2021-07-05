@@ -1,0 +1,558 @@
+/*List */
+/*1. Scroll bar */
+
+
+/*---------------- SCROLL BAR ---------------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.664); 
+    border-radius: 4px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  /*-------------------- End Scroll Bar -------------------------------*/
+
+
+.modal_v2{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+}
+.tg_v2{
+    background: rgb(96,239,255);
+    background: linear-gradient(90deg, rgba(96,239,255,1) 0%, rgba(254,245,180,1) 100%); 
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30px ;
+    z-index: 1;
+    animation: fadeInv2 0.5s;
+    margin: 0;
+}
+
+.circlect{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+	position: absolute;
+    background: rgb(130,242,255);
+    background: linear-gradient(90deg, rgba(130,242,255,1) 0%, rgba(255,247,185,1) 100%);
+	width: 80%; 
+    height: auto;
+    padding-top: 80%; 
+    border-radius: 50%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 {
+	position: absolute;
+    background: rgb(130,242,255);
+    background: linear-gradient(270deg, rgba(130,242,255,0.50) 0%, rgba(255,247,185,0.50) 100%);
+	width: 60%; 
+    height: auto; 
+    padding-top: 60%;
+    border-radius: 50%;
+    z-index: 1;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle3 {
+	position: absolute;
+    background: rgb(130,242,255);
+    background: linear-gradient(90deg, rgba(130,242,255,0.25) 0%, rgba(255,247,185,0.25) 100%);
+	width: 40%; 
+    height: auto; 
+    padding-top: 40%;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+
+@keyframes fadeInv2 {
+    0% {opacity:0; }
+    100% {opacity:1;}
+}
+
+.modal-contentv2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+
+.modal-content-centeredv2{
+    width: 85%;
+    min-height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modalcolv2{
+    width: 30%;
+    min-width: 300px;
+    min-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuv2{
+    width: 90%;
+    height: 90%;
+}
+
+.logomenuv2{
+    position: absolute;
+    left: 7.5%;
+    top: 20px;
+}
+
+.Moto-Social-ct{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motocontainer{
+    width: 30%;
+    height: 100px;
+    position: absolute;
+    left: 7.5%;
+    bottom: 50px;
+    font-size: 2rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1061px){
+    .motocontainer{
+        bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .motocontainer{
+        position: fixed;
+        left: auto;
+        width: 50%;
+        top: 11rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .motocontainer{
+        font-size: 1rem;
+        
+    }
+}
+
+.left{
+    position: absolute;
+    left: 0px;
+}
+
+.right{
+    position: absolute;
+}
+
+.moto1{
+    position: absolute;
+    animation-name: motoopacity1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(68, 68, 68);
+    
+}
+
+.moto2{
+    position: absolute;
+    animation-name: motoopacity2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(68, 68, 68);
+
+}
+
+@keyframes motoopacity1 {
+    0% {opacity: 1;}
+    10% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    90% {opacity: 0;}
+    95% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes motoopacity2 {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+/* Social Menu V2 */
+
+
+
+.social-container-menuv2{
+    position: absolute;
+    right: -12%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 1061px){
+    .social-container-menuv2{
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .social-container-menuv2{
+        position: fixed;
+        width: 50%;
+        top: 40%;
+        right: 1rem;
+        text-align: right;
+
+    }
+
+}
+
+
+
+.social-container-menuv2 ul {
+  list-style-type: none;
+  
+}
+
+
+.social-container-menuv2 ul li {
+  list-style-type: none;
+  display: inline;
+}
+.socialFacebook {
+  width: 18%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 708px){
+    .socialFacebook{
+        width: 38%;
+    }
+}
+
+.socialFacebook:hover {
+  animation-name: colorChange;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes colorChange {
+  0% {  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); transform: translate(0px,0px);}
+  50% {transform: translate(0px, -20px);}
+  100% {  -webkit-filter: grayscale(0%); transform: translate(0px, -20px);  /* Safari 6.0 - 9.0 */ filter: grayscale(0%);}
+}
+
+  .menuv2{
+      padding-left: .5rem;
+  }
+
+.menuTitle{
+    text-decoration: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-weight:110;
+    cursor:context-menu;
+    color: rgb(68, 68, 68);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    
+}
+
+.menuTitle:onclick{
+    color: white;
+}
+
+
+.menuUlv2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 2px;
+    overflow: hidden;
+}
+
+
+
+.menuUlv2 li a {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: rgb(68, 68, 68);
+    font-size: 23px;
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+.minusAnime a:hover > i{
+    animation-name: iMovement;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@keyframes iMovement {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+.minusAnime i{
+    opacity: 0;
+    padding-right: 5px;
+    position: absolute;
+}
+
+.circleAnimation1{
+    animation-name: CircleAnimation;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+}
+
+.circleAnimation2{
+    animation-name: CircleAnimation;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-delay: 0.1s;
+}
+
+.circleAnimation3{
+    animation-name: CircleAnimation;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-delay: 0.2s;
+}
+
+@keyframes CircleAnimation{
+    0% {transform: scale(1,1);
+        filter:contrast(100%);
+    }
+    50% {transform: scale(1.05,1.05);
+        filter:contrast(120%);
+    }
+    100% {transform: scale(1,1);
+        filter:contrast(100%);
+    }
+}
+
+
+ .minusAnime a:hover > span {
+     position: relative;
+     left: 0;
+     animation-name: textMovement;
+     animation-duration: 1s;
+     -webkit-animation-fill-mode: forwards;
+
+ }
+
+ @keyframes textMovement {
+    0% {left: 0px;}
+    100%{left: 30px;}
+ }
+
+
+
+
+ /* The button that change current time of video in index */
+.setTimeButton {
+  position: absolute;
+  bottom: 0;
+  left: 96%;
+  margin-bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(151, 149, 149);
+  border-radius: 50%;
+}
+
+
+.center-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* TEST DELETE ME */
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    /* background-color: red; */
+}
+
+.flex-container{
+    width: 80%;
+    height: 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    position: relative;   
+}
+
+.box h3{
+    cursor: default;
+}
+
+/* Responsive Menu Open Links Box */
+
+#TextBox {
+    transition: transform 0.35s, clip-path 0.35s;
+    text-align: left;
+    margin: 10px;
+}
+
+#TextBox:not(.open) {
+    height: 0;
+    transform: translateY(-100%);
+    clip-path: polygon(0 100%,100% 100%,100% 100%,0 100%);
+}
+
+#TextBox.open {
+    transform: translateY(0);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+
+
+#TextBox {
+    transition: transform 0.35s, clip-path 0.35s;
+    text-align: left;
+    margin: 10px;
+}
+
+
+#TextBox.open {
+    transform: translateY(0);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+
+
+/* Mobile Menu */
+
+.Mobilemodal-content-centeredv2{
+    width: 85%;
+    min-height: 10vh;
+    position: absolute;
+    left: 3%;
+    display: none;
+    top: 30%;
+}
+
+.Mobilemodalcolv2{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+
+@media only screen and (max-width: 768px){
+    .modal-content-centeredv2{
+        display: none;
+    }
+    .Mobilemodal-content-centeredv2 {
+        display: block;
+
+    }
+}
+
+@media only screen and (max-width:425px){
+    .Mobilemodal-content-centeredv2{
+        left: 3%;
+    }
+}
+ 
+@media only screen and (max-width:375px){
+    .Mobilemodal-content-centeredv2{
+        left: 3%;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .Mobilemodal-content-centeredv2{
+        left: 3%;
+    }
+}
+
