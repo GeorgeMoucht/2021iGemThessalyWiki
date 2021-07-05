@@ -42,7 +42,7 @@ git log 		        --> You can see the history of commits in the repository.
 git clone <url> <where to clone>
 
 
-
+    
 -----------VIEW INFORMATION ABOUT THE REMOTE REPOSITORY-------------------
 
 git remote -v			
