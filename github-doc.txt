@@ -1,0 +1,113 @@
+
+-----------------CONFIGURATION--------------------
+
+git config --global user.name "User Name"
+
+git config --global user.mail "email"
+
+git config --list			--> check the config values
+
+
+--------INITIALIZE A REPO FROM EXISTING CODE--------
+
+git init
+
+----------------BEFORE COMMIT-----------------------
+
+get status				---> check what new you have to commit in the repository
+
+touch .gitignore			--->Create git ignore file. Any file is there ignored by git.
+
+-----------ADD FILES TO STAGING AREA------------------
+
+git add -A			--> Add all files in the staging area.
+
+git add "filename"		--> Add specific name to the staging area.
+
+git status			-->check if we add files to staging area.
+
+
+
+------------------COMMIT FILES--------------------------
+
+git coomit -m "Msg"
+
+git log 		        --> You can see the history of commits in the repository.
+
+
+
+----------------CLONING A REMOTE REPO-------------------
+
+
+git clone <url> <where to clone>
+
+
+
+-----------VIEW INFORMATION ABOUT THE REMOTE REPOSITORY-------------------
+
+git remote -v			
+
+git branch -a			--> List all the braches of the repository [local/server]
+
+
+-----------PUSHING CHANGES------------------
+
+git diff			--> View all changes you made before commit to staging area.
+
+git status
+
+git add -A
+
+git commit -m "Msg"
+
+		THEN PUSH:
+		
+git pull				-->Will pull any changes that have been maded since the 						   
+					   last time we re-pull the remote repository.
+
+git push origin "nameOfBrance" 	-->Push the canges to global repository. DONT FORGET TO PULL FIRST.
+
+
+
+
+
+
+---------------------COMMON WORKFLOW------------------
+	----------CREATE A BRANCH FOR DESIRED FEATURE------------------
+
+	git branch -a				--> View all existing braches.
+
+	git branch "NameOfBranch"		-->Create a new branch. Localy.
+
+	git checkout "NameOfBranch"		--> Change to a speacific branch.
+
+	git status				--> Check the modifies you made.
+
+	git add -A				-->Add files to staging area.
+
+	git git commit -m 			--> Commit and message.
+
+	git push -u origin "NameOfBranch"	--> Push local branch to remote repository.
+
+
+	--------------------Merge a branch with master---------------
+
+
+	git checkout master
+
+	git pull origin master
+	
+	git branch --merged		--> Show the branches that we merged so far in master.
+	
+	git merger "NameOfBranch"	
+	
+	git push origin master
+	
+	---------------Delete a branch that have been merged to master----------------
+
+
+	git branch --merged				--> Check that all have been merged before delete.
+	
+	git branch -d "NameOfBranch"			-->Local delete.
+	
+	git push origin --delete "nameOfRepository"	-->Delete from remote repository.
