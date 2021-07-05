@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pre-Loader</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--==========================================================-->
+        <!--Press 2 start font awesome-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="assets/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!--==========================================================-->
+        <!--==========================================================-->
+        <!--==========================================================-->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+        <!--jQuerry / pace js / tweenmax-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="preloader" id="preloader">
+            <div id="text"></div>
+            <div class="r" id="textLoad"></div>
+        </div>
+        <div class="MainMenu">
+            <div class="nav-brand">
+                <div class="nav-brand-logo">
+                    <a href="http://127.0.0.1:5500/index.html">
+                        <img class="brand-icon" src="assets/img/LogoAmal2021.jpg" width="70">
+                    </a>
+                </div>
+                <div class="nav-list">  
+                    <a href="index.html">Home</a>
+                    <a>Team</a>
+                    <a>Project</a>
+                    <a>Safety</a>        
+                </div>
+            </div>
+        </div>
+        
+        <div class="All">
+                <div class="ContainerNavigationContext">
+                    <div class="NavigationContainer">
+                
+
+                        <div class="NavigationMenuContainer">
+                            <div class="NavigationPageName">
+                                <h1>PageName</h1>
+                            </div>
+                            <div class="NavigationLinks">
+                                <ul>
+                                   <li><a href="#first" id="link_1">First</a></li>
+                                   <ul>
+                                       <li>-<i>First1</i></li>
+                                       <li>-<i>First2</i></li>
+                                       <li>-<i>First3</i></li>
+                                   </ul>
+                                   <li><a href="#second" id="link_2">Second</a></li> 
+                                   <ul>
+                                        <li>-<i>Second1</i></li>
+                                        <li>-<i>Second2</i></li>
+                                        <li>-<i>Second3</i></li>
+                                    </ul>
+                                   <li><a href="#third" id="link_3">Third</a></li>
+                                   <ul>
+                                        <li>-<i>Third1</i></li>
+                                        <li>-<i>Third2</i></li>
+                                        <li>-<i>Third3</i></li>
+                                    </ul>
+                                </ul>
+                                
+                            </div>
+                                
+                        </div>
+                    </div>
+                    <div class="RightSideBar">
+                        <!-- Right Side Bar -->
+                    </div>
+                    <div class="ContainerContext">
+                        <div id="first" class="ContextBody">
+                            <div  class="ConTitle">
+                                <h1 >Title 1</h1>
+                            </div>
+                            <div class="Context">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quia laudantium voluptatem, obcaecati iusto eaque explicabo ipsa eius eveniet porro veritatis facere, atque architecto aliquid officia dicta minima nam mollitia?
+                            </div>
+                        </div>
+                        <div id="second" class="ContextBody">
+                            <div  class="ConTitle">
+                                <h1 >Title2</h1>
+                            </div>
+                            <div class="Context">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quia laudantium voluptatem, obcaecati iusto eaque explicabo ipsa eius eveniet porro veritatis facere, atque architecto aliquid officia dicta minima nam mollitia?
+                            </div>
+                        </div>
+                        <div id="third" class="ContextBody">
+                            <div  class="ConTitle">
+                                <h1>Title 3</h1>
+                            </div>
+                            <div class="Context">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quia laudantium voluptatem, obcaecati iusto eaque explicabo ipsa eius eveniet porro veritatis facere, atque architecto aliquid officia dicta minima nam mollitia?
+                            </div>
+                        </div>
+
+                    </div> 
+                    
+                </div>
+
+            
+            
+        </div>
+
+
+
+        <script src="assets/js/main.js"></script>
+        <script>
+            var timeoutID;
+
+            jQuery(document).ready(function() {
+                // start hiding the message after 2 seconds
+                timeoutID = window.setTimeout(hideMessage, 2000);
+            });
+
+            function hideMessage() {
+                jQuery('.preloader').animate({
+                    opacity: 0
+                }, 800, function() {
+                    jQuery('.preloader').css({
+                        display: 'none'
+                    });
+                });
+            }
+        </script>
+
+        <script>
+            $(document).ready(function() {
+            $(window).scroll(function() {
+                var scrollPos = $(window).scrollTop();
+                
+                var page1Top = $("#first").offset().top;
+                var page2Top = $("#second").offset().top;
+                var page3Top = $("#third").offset().top;
+
+                if (scrollPos >= page1Top && scrollPos < page2Top) {
+                $("#link_1").addClass("active");
+                $("#link_2").removeClass("active");
+                $("#link_3").removeClass("active");
+                } else {
+                $("#link_1").removeClass("active");
+                }
+
+                if (scrollPos >= page2Top && scrollPos < page3Top) {
+                $("#link_2").addClass("active");
+                $("#link_1").removeClass("active");
+                $("#link_3").removeClass("active");
+                } else {
+                $("#link_2").removeClass("active");
+                }
+                
+                if (scrollPos >= page3Top) {
+                $("#link_3").addClass("active");
+                $("#link_1").removeClass("active");
+                $("#link_2").removeClass("active");
+                } else {
+                $("#link_3").removeClass("active");
+                }
+
+            });
+            });
+        </script>
+
+    </body>
+</html>

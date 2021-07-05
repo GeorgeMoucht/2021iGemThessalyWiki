@@ -1,0 +1,28 @@
+Colors
+
+to movaki: #AD336D
+to portokali: #F8997D
+skouro mple: #0061FF
+anoixto mple: #60EFFF
+to kitrino: #FEF5B4
+
+
+
+circle1
+background: rgb(130,242,255);
+background: linear-gradient(90deg, rgba(130,242,255,1) 0%, rgba(255,247,185,1) 100%);
+
+
+circle2
+background: rgb(130,242,255);
+    background: linear-gradient(270deg, rgba(130,242,255,0.50) 0%, rgba(255,247,185,0.50) 100%);
+
+circle3
+background: rgb(130,242,255);
+background: linear-gradient(90deg, rgba(130,242,255,0.25) 0%, rgba(255,247,185,0.25) 100%);
+
+
+
+#303030 #dff8eb
+
+9bafd9 to 103783

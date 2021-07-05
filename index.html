@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--==========================================================-->
+        <!--Press 2 start font awesome-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!--==========================================================-->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+        <!--==========================================================-->
+        <!--jQuerry / pace js / tweenmax-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+
+    <body>
+        <div class="preloader" id="preloader">
+                <div id="text"></div>
+                <div class="r" id="textLoad"></div>
+        </div>
+    
+        <div class="All">
+            <!--Main Menu-->
+            <div class="MainMenu">
+                <div class="nav-brand">
+                    <div class="nav-brand-logo">
+                        <a href="http://127.0.0.1:5500/index.html">
+                            <img class="brand-icon" src="assets/img/LogoAmal2021.jpg" width="70">
+                        </a>
+                    </div>
+                    <div class="nav-list">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li class="dropdown"><a class="dropbtn">Team</a>
+                                <div class="dropdown-content">
+                                    <a href="">Team Members</a>
+                                    <a href="">Collaborations</a>
+                                    <a href="">Attributions</a>
+                                </div>
+                            </li>
+                            <li><a>Project</a></li>
+                            <li><a>Safety</a></li>
+                            <li><a>Human Practices</a></li>
+                            <li><a>Parts</a></li>
+                            <li><a>Awards</a> </li>      
+                        </ul> 
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="main-ct">
+                <div class="main-content">
+                    <div class="par">
+
+                    </div>
+                </div>
+                <div class="main-content2">
+                    <div class="par">
+
+                    </div>
+                </div>
+                <div class="main-content3">
+                    <div class="par">
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-ct2">
+                <div class="main-content">
+                    <div class="par">
+
+                    </div>
+                </div>
+                <div class="main-content2">
+                    <div class="par">
+
+                    </div>
+                </div>
+                <div class="main-content3">
+                    <div class="par">
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-ct3">
+                <div class="main-content">
+                    <div class="par">
+
+                    </div>
+                </div>
+                <div class="main-content2">
+                    <div class="par">
+
+                    </div>
+                </div>
+                <div class="main-content3">
+                    <div class="par">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <script src="assets/js/main.js"></script>
+        <script>
+            var timeoutID;
+
+            jQuery(document).ready(function() {
+                // start hiding the message after 2 seconds
+                timeoutID = window.setTimeout(hideMessage, 2000);
+            });
+
+            function hideMessage() {
+                jQuery('.preloader').animate({
+                    opacity: 0
+                }, 800, function() {
+                    jQuery('.preloader').css({
+                        display: 'none'
+                    });
+                });
+            }
+        </script>
+
+    </body>
+</html>

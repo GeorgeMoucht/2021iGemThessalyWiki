@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToggleMenu</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/ToggleV_2.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-free-5.15.3-web/css/all.css">
+
+        <!-- Video js lib for index-->
+        <script src="https://vjs.zencdn.net/5.6.0/video.js"></script>
+        <script src="https://unpkg.com/videojs-abloop/dist/videojs-abloop.min.js"></script>
+
+        <!--==========================================================-->
+        <!--Press 2 start font awesome-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!--==========================================================-->
+        <!--==========================================================-->
+        <!--jQuerry / pace js / tweenmax-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+
+
+    <body style="background-color: black; " onload="VideoChoice()">
+        <!--PRELOADER-->
+        <div class="preloader" id="preloader">
+            <div id="text"></div>
+            <div class="r" id="textLoad"></div>
+        </div>
+
+        <!--Toggle NAV Bar-->       
+        <div id="toggleX" onclick="toggleMenu(this)" class="ct-tm  ">
+            <span class="menucirc1">
+
+            </span>
+            <div class="menuButton">
+                <h3>Menu</h3>
+            </div>
+            <div class="toggleX">
+                <div class="row1"></div>
+                <div class="row2"></div>
+                <div class="row3"></div>
+            </div>
+
+            <span class="menucirc2">
+
+            </span>
+
+        </div>
+
+        <!--THE MAIN CONTEXT-->
+        <div class="t" style="width: 100px; height: 100px; background-color: aqua; position: absolute;  top: 2%; z-index: 10; display:flex; justify-content:center; align-items: center;">
+             A
+        </div>
+
+      
+
+        <div class="ToggleMenu">
+            <!-- The Modal -->
+            <div id="myModal" class="modal_v2" >
+        
+                    <!-- Modal content -->
+                    <div class="tg_v2">
+
+                        <span class="close"></span>
+                        <div class="modal-contentv2">
+                            <!-- Logo -->
+                            <div class="logomenuv2">
+                                <img src="assets/img/LogoAmal2021.jpg" width="130px">
+                            </div>
+                            <!-- Desktop Links Box -->
+                            <div class="modal-content-centeredv2">
+
+                                <div class="modalcolv2">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">About</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2 ">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Team</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Attribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Fun Stuff</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sponsors</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Project</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Description</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Engineering</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Safety</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Partnership</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sustainable</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Proof of Concept</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Product Development</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Implementation</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Future Vision</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Entrepreneurship</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Wet Lab</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Contribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Experiments</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Parts</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Improvement</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Results</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2">
+                                    <div class="menuv2 ">
+                                        <h3 class="menuTitle">Dry Lab</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Model</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Software</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Hardware</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Human Practices</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Human Practices</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Education & Public <span style="padding: 1rem;">Engagement</span></span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Collaborations</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Mental Health</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!------------------------------------------------------------------------------------------------------------------>
+
+                            <!-- Tablet/Mobile Links Box-->
+                            <div class="Mobilemodal-content-centeredv2">
+
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">About</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2 ">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Team</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Attribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Fun Stuff</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sponsors</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Project</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Description</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Engineering</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Safety</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Partnership</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sustainable</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Proof of Concept</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')"  class="menuTitle">Product Development</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Implementation</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Future Vision</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Entrepreneurship</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Wet Lab</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Contribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Experiments</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Parts</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Improvement</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Results</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2 ">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Dry Lab</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Model</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Software</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Hardware</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Human Practices</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Human Practices</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Education & Public <span style="padding: 1rem;">Engagement</span></span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Collaborations</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Mental Health</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="Moto-Social-ct">
+                                
+                                                                
+                                <div class="motocontainer">
+
+                                    <div class="moto1">
+                                        <p>"Prevention the best treatment"</p>
+                                    </div>
+                                    <div class="moto2">
+                                        <p>"We invent we engineer we pioneer"</p>
+                                    </div>
+
+                                </div> 
+                                
+                                <div class="social-container-menuv2">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/facebookLogoColor.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/instagramLogoColor.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/twitterLogoColor.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/youtubeLogoColor.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="circlect">
+                            <span id="circle" class="circle"></span>
+                            <span id="circle2" class="circle2"></span>
+                            <span id="circle3" class="circle3"></span>  
+                        </div>
+                                              
+                    </div>
+                    <div class="blurEffect">
+                        <!-- Blur Effect -->
+                    </div>
+            </div> <!-- End Of Model -->
+        </div><!-- End Of ToggleMenu -->
+        
+        <div id="else" class="test">
+            <video  autoplay muted loop id="myVideo">
+                    <source class="bg1" src="/assets/img/evozyne-hp-landscape.mp4" type="video/mp4">
+                        <source  class="bg2" src="/assets/img/evozyne-mobile.mp4" type="video/mp4">
+
+                        Your browser does not support video. Please open the page in different browser.             
+            </video>
+
+            <div class="center-btn">
+                <button type="button" id="loopcounterPlus">+1</button>
+                <button type="button" id="loopcounterMinus">-1</button>
+            </div>
+
+        </div>
+
+
+        <script src="assets/js/main.js"></script>
+        <script>
+            var timeoutID;
+
+            jQuery(document).ready(function() {
+                // start hiding the message after 2 seconds
+                timeoutID = window.setTimeout(hideMessage, 2000);
+            });
+
+            function hideMessage() {
+                jQuery('.preloader').animate({
+                    opacity: 0
+                }, 800, function() {
+                    jQuery('.preloader').css({
+                        display: 'none'
+                    });
+                });
+            }
+        </script>
+
+
+        <!-- Toggle menu transform X-->
+        <script>
+            function toggleMenu(p){
+                var x = document.getElementById("myModal");
+                var blur = document.getElementById("else");
+                if (x.style.display === "block"){
+                    x.style.display = "none";
+                    p.classList.toggle("change");
+                    blur.style.filter = "blur(0px)";
+                }else{
+                    x.style.display = "block";
+                    p.classList.toggle("change");
+                    blur.style.filter = "blur(8px)";
+
+                }
+            }
+
+           
+        var video = videojs("myVideo",{
+          plugins: {
+              abLoopPlugin: {}
+          }
+         });
+        var plus = document.getElementById("loopcounterPlus");
+        var minus = document.getElementById("loopcounterMinus");
+        var count = 0;
+        plus.onclick = function(){
+            count += 1;
+            if (count == 1) {
+              video.ready(function(){
+                  this.abLoopPlugin.setStart(50).setEnd(52).playLoop();
+                });
+            };
+            if (count == 2) {
+                video.ready(function(){
+                    this.abLoopPlugin.setStart(52).setEnd(56).playLoop();
+                });
+            };
+
+        };
+        minus.onclick = function(){
+            count -= 1;
+            if (count == 0) {
+              video.ready(function(){
+                  this.abLoopPlugin.setStart(0).setEnd(40).playLoop();
+                });
+            };
+        };
+
+ 
+        </script>
+            
+
+
+
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When click outside Modal change ToggleMenu icon
+            var p = document.getElementById("toggleX");
+
+            // Blur Effect
+            var blur = document.getElementById("else");
+
+
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                p.classList.toggle("change");
+                blur.style.filter = "blur(0px)";
+            }
+            }
+
+
+
+            </script>
+
+            <!-- Circle Follows Cursor -->
+            <script>
+                if ($(window).width() > 768) {
+                    jQuery(document).ready(function() {
+
+                    var mouseX = 0, mouseY = 0;
+                    var xp = 0, yp = 0;
+                    
+                    $(document).mousemove(function(e){
+                    mouseX = e.pageX - 800;
+                    mouseY = e.pageY - 800; 
+                    });
+                    
+                    setInterval(function(){
+                    xp += ((mouseX - xp)/46);
+                    yp += ((mouseY - yp)/46);
+                    $("#circle").css({left: xp +'px', top: yp +'px'});
+                    }, 20);
+
+                    });
+                }
+                </script>
+
+                
+                <script>
+                    if ($(window).width() > 768) {
+                        jQuery(document).ready(function() {
+
+                        var mouseX = 0, mouseY = 0;
+                        var xp = 0, yp = 0;
+                        
+                        $(document).mousemove(function(e){
+                        mouseX = e.pageX - 550;
+                        mouseY = e.pageY - 610; 
+                        });
+                        
+                        setInterval(function(){
+                        xp += ((mouseX - xp)/35);
+                        yp += ((mouseY - yp)/35);
+                        $("#circle2").css({left: xp +'px', top: yp +'px'});
+                        }, 20);
+
+                        });
+                    }
+                </script>
+
+                <script>
+                    if ($(window).width() > 768) {
+                        jQuery(document).ready(function() {
+
+                        var mouseX = 0, mouseY = 0;
+                        var xp = 0, yp = 0;
+                        
+                        $(document).mousemove(function(e){
+                        mouseX = e.pageX - 350;
+                        mouseY = e.pageY - 450; 
+                        });
+                        
+                        setInterval(function(){
+                        xp += ((mouseX - xp)/30);
+                        yp += ((mouseY - yp)/30);
+                        $("#circle3").css({left: xp +'px', top: yp +'px'});
+                        }, 20);
+
+                        });
+                    }
+                
+            </script>
+
+            <!-- Circle Animation -->
+            <script>
+                function circleAnimationIn(){
+                    var ct1 = document.getElementById("circle");
+                    var ct2 = document.getElementById("circle2");
+                    var ct3 = document.getElementById("circle3");
+                    ct2.classList.toggle("circleAnimation2");
+                    ct3.classList.toggle("circleAnimation1");
+                    ct1.classList.toggle("circleAnimation3");
+                }
+            </script>
+
+
+    </body>
+</html>

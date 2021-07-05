@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToggleMenu</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--==========================================================-->
+        <!--Press 2 start font awesome-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!--==========================================================-->
+        <!--==========================================================-->
+        <!--jQuerry / pace js / tweenmax-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body style="background-color: black;">
+
+        <div class="preloader" id="preloader">
+            <div id="text"></div>
+            <div class="r" id="textLoad"></div>
+        </div>
+
+        <div class="ToggleMenu">
+
+                
+            <div id="toggleX" onclick="toggleMenu(this)" class="ct-tm">
+                <div class="row1"></div>
+                <div class="row2"></div>
+                <div class="row3"></div>
+            </div>
+        
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal" >
+                
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <!--Logo-->
+                        <div class="logo">
+                            <img class="logoImg" src="assets/img/LogoAmal2021.jpg" alt="2021-Amalthea-Logo">
+                        </div>
+                        
+                        <span class="close"></span>
+
+                        <ul class="li-menu">
+                            <li><a class="active" href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Project</a></li>
+                            <li><a href="">Parts</a></li>
+
+                            <li><a href="">About</a></li>
+                            <li><a href="">Project</a></li>
+                            <li><a href="">Parts</a></li>
+                            
+                            <li><a onclick="myFunction()" id="myBtn">Human Practices</a>
+                            <span id="more">
+                            <a href="url">link text</a> <br>
+                            <a href="url">link text</a> <br> 
+                            <a href="url">link text</a> <br>
+                            </span>
+                            <li><a href="">Implementat   on</a></li>
+                            <li><a href="">Medal Criteria</a></li>
+                            <li><a href="">Giant Jamboree</a></li>
+
+                        </ul>
+                    
+                    </div>
+                    <div class="blurEffect">
+
+                    </div>
+
+            </div> <!-- End Of Model -->
+
+        </div><!-- End Of ToggleMenu -->
+
+        <div id="else" class="test">
+            <video autoplay muted loop id="indexVideo" width="auto" >
+                <source src="/assets/img/videoIndex.mp4" type="video/mp4">
+                Your browser does not support video. Please open the page in different browser.
+            </video>
+        </div>
+
+       <!-- <div id="else" class="else">
+            
+                <video autoplay muted loop id="indexVideo" width="auto" >
+                    <source src="/assets/img/videoIndex.mp4" type="video/mp4">
+                    Your browser does not support video. Please open the page in different browser.
+                </video>
+            
+        </div>-->
+
+        <script src="assets/js/main.js"></script>
+        <script>
+            var timeoutID;
+
+            jQuery(document).ready(function() {
+                // start hiding the message after 2 seconds
+                timeoutID = window.setTimeout(hideMessage, 2000);
+            });
+
+            function hideMessage() {
+                jQuery('.preloader').animate({
+                    opacity: 0
+                }, 800, function() {
+                    jQuery('.preloader').css({
+                        display: 'none'
+                    });
+                });
+            }
+        </script>
+
+
+        <!-- Toggle menu transform X-->
+        <script>
+            function toggleMenu(p){
+                var x = document.getElementById("myModal");
+                var blur = document.getElementById("else");
+                if (x.style.display === "block"){
+                    x.style.display = "none";
+                    p.classList.toggle("change");
+                    blur.style.filter = "blur(0px)";
+                }else{
+                    x.style.display = "block";
+                    p.classList.toggle("change");
+                    blur.style.filter = "blur(8px)";
+
+                }
+            }
+        </script>
+
+
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When click outside Modal change ToggleMenu icon
+            var p = document.getElementById("toggleX");
+
+            // Blur Effect
+            var blur = document.getElementById("else");
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                p.classList.toggle("change");
+                blur.style.filter = "blur(0px)";
+            }
+            }
+
+
+
+            </script>
+    </body>
+</html>
