@@ -145,6 +145,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .menuv2{
@@ -562,3 +563,44 @@
     }
 }
 
+/* Video js controlls hide */
+
+.vjs-control-bar { 
+    display:none; 
+}
+
+.vjs-big-play-button{
+    display: none;
+}
+
+.vjs-fg-color{
+    display: none;
+}
+
+.vjs-bg-color{
+    display: none;
+}
+
+.window-color{
+    display: none;
+}
+
+.vjs-tracksettings-controls{
+    display: none;
+}
+
+.vjs-font-family{
+    display: none;
+}
+
+.vjs-edge-style{
+    display: none;
+}
+
+.vjs-modal-dialog-description{
+    display: none;
+}
+
+.vjs-font-percent{
+    display: none;
+}

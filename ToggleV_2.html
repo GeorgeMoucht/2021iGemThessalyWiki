@@ -52,7 +52,7 @@
         </div>
 
         <!--THE MAIN CONTEXT-->
-        <div class="t" style="width: 100px; height: 100px; background-color: aqua; position: absolute;  top: 2%; z-index: 10; display:flex; justify-content:center; align-items: center;">
+        <div class="t" style="width: 100px; height: 100px; background-color: aqua; position: absolute;  top: 2%; z-index: 1; display:flex; justify-content:center; align-items: center;">
              A
         </div>
 
@@ -379,7 +379,7 @@
         </div><!-- End Of ToggleMenu -->
         
         <div id="else" class="test">
-            <video  autoplay muted loop id="myVideo">
+            <video  autoplay muted loop controls id="myVideo">
                     <source class="bg1" src="/assets/img/evozyne-hp-landscape.mp4" type="video/mp4">
                         <source  class="bg2" src="/assets/img/evozyne-mobile.mp4" type="video/mp4">
 
@@ -432,10 +432,11 @@
                 }
             }
 
-           
+        /* Video loop control buttons */
         var video = videojs("myVideo",{
           plugins: {
-              abLoopPlugin: {}
+              abLoopPlugin: {},
+
           }
          });
         var plus = document.getElementById("loopcounterPlus");
