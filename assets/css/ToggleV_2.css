@@ -590,3 +590,12 @@
     width: 65%;
     height: auto;
 }
+
+.main-content-text-container {
+    width:50%;
+    margin-left: 4rem;
+    height:500px;
+    background-color: red;
+    position: absolute;
+    top: 17rem;
+}
