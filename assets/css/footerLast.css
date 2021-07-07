@@ -55,11 +55,11 @@ body {
 }
 .fLogo-img {
     padding-right: 1rem;
-    
+    width: auto;
 }
 
 .footerLogo-cnt { /* 1 */
-    width: auto;
+    width: 30%;
     height: 90%;
     display: flex;
     flex-direction: row;
@@ -96,6 +96,22 @@ body {
   color: black;
   
 }
+/*-----Fix the media screen for CONTACT US on footer */
+@media screen and (max-width: 841px){
+    .footer-contactInfo-cnt h2 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    .footer-contactInfo-cnt h2 {
+        font-size: 0.7rem;
+    }
+}
+/*-----End of media fot CONTACT US */
+
+
+
+
 
 .footer-social {
     min-width:80%;
@@ -109,7 +125,7 @@ body {
 
 
 .foo-soc-img img {
-    width: 100px;
+    width: 100%;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
