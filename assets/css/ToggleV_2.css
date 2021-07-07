@@ -136,7 +136,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 5rem;
-}
+    z-index: -1;
+} 
 
 .modalcolv2{
     width: 30%;
@@ -160,11 +161,13 @@
 }
 
 .Moto-Social-ct{  
-    width: 100%;
+    width: 50%;
     height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
+    
 }
 
 .motocontainer{
@@ -349,6 +352,7 @@
     padding: 0;
     padding-top: 2px;
     overflow: hidden;
+    z-index: 9999;
 }
 
 
@@ -604,3 +608,7 @@
 .vjs-font-percent{
     display: none;
 }
+
+.vjs-playing {
+    pointer-events: none;
+  }

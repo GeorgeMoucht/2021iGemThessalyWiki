@@ -23,7 +23,7 @@
             <div id="text"></div>
             <div class="r" id="textLoad"></div>
         </div>
-        <div class="MainMenu">
+        <!--<div class="MainMenu">
             <div class="nav-brand">
                 <div class="nav-brand-logo">
                     <a href="http://127.0.0.1:5500/index.html">
@@ -37,13 +37,14 @@
                     <a>Safety</a>        
                 </div>
             </div>
-        </div>
+        </div>-->
         
         <div class="All">
                 <div class="ContainerNavigationContext">
+                    <div class="overview">
+                        
+                    </div>
                     <div class="NavigationContainer">
-                
-
                         <div class="NavigationMenuContainer">
                             <div class="NavigationPageName">
                                 <h1>PageName</h1>
@@ -170,5 +171,22 @@
             });
         </script>
 
+        <script>
+            var fixmeTop = $('.NavigationContainer').offset().top;
+            $(window).scroll(function() {
+                var currentScroll = $(window).scrollTop();
+                if (currentScroll >= fixmeTop) {
+                    $('.NavigationContainer').css({
+                        position: 'fixed',
+                        top: '0',
+                        left: '0'
+                    });
+                } else {
+                    $('.NavigationContainer').css({
+                        position: 'static'
+                    });
+                }
+            });
+        </script>
     </body>
 </html>
