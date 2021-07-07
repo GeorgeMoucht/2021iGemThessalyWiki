@@ -611,3 +611,41 @@
 .vjs-playing {
     pointer-events: none;
   }
+
+
+
+
+
+/* -----------------INDEX CONTENT-----------------*/
+
+.main-content-container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color:rgb(151, 149, 149);
+    z-index: 10; 
+
+}
+
+.main-content-logo{
+    width: auto;
+    height: auto; 
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 4rem;
+
+}
+
+.horizontal-amal-logo{
+    width: 65%;
+    height: auto;
+}
+
+.main-content-text-container {
+    width:50%;
+    margin-left: 4rem;
+    height:500px;
+    background-color: red;
+    position: absolute;
+    top: 17rem;
+}
