@@ -316,7 +316,7 @@ background: linear-gradient(90deg, rgba(254,245,180,1) 0%, rgb(247, 247, 247) 25
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 10;
+    z-index: 11;
     background-color: white;
 
 }
