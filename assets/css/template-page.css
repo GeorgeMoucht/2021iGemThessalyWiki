@@ -80,7 +80,7 @@ body{
     margin-top: 5rem;
     width: 40%;
     min-width: 100px !important;
-
+    max-height: 200px !important;
 }
 
 .left-sidebar-submenu{
