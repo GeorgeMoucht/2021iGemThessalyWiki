@@ -13,6 +13,10 @@ body {
     font-size: 28px;
 }
 
+body{
+    overflow-x: hidden !important;
+
+}
 
 /*----------- FOOTER--------------*/
 
@@ -45,26 +49,86 @@ body {
 
 .upperFooter-cnt {
     width:85%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 1rem;
+}
 
 
+.foo-soc-img a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-img-logo{
+    display: none;
+}
+
+@media screen and (max-width: 970px){
+    .upperFooter-cnt{
+        flex-direction: column;
+    }
+    
+    .foo-soc-img img{
+        width: 50% !important;
+    }
+
+    .footer-sponsors-cnt {
+        width: 100% !important;
+    }
+
+    .footer-img-logo{
+        display: block;
+    }
+
+    .footer-right-logo-cnt img{
+        display: none;
+    }
+
+    .foo-soc-img img:hover{
+        animation-name:none;
+        animation-duration: 0s !important;
+    }
+
+     .flex-end a{
+        justify-content: flex-end;
+    }
+
+    .flex-start a{
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .footerLogo-cnt img{
+        min-width: 100% !important;
+
+    }
 }
 .fLogo-img {
     padding-right: 1rem;
     width: auto;
 }
 
+
 .footerLogo-cnt { /* 1 */
     width: 30%;
-    height: 90%;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
+
+.footerLogo-cnt img{ /* 1 */
+    min-width: 60%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 
 .yLine{
@@ -77,7 +141,6 @@ body {
     
 }
 .footer-contactInfo-cnt {
-    background-color:rgb(199, 199, 199);
     height: 80%;
     width:auto;
     display: flex;
@@ -99,12 +162,12 @@ body {
 /*-----Fix the media screen for CONTACT US on footer */
 @media screen and (max-width: 841px){
     .footer-contactInfo-cnt h2 {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 }
 @media screen and (max-width: 760px) {
     .footer-contactInfo-cnt h2 {
-        font-size: 0.7rem;
+        font-size: 1.5rem;
     }
 }
 /*-----End of media fot CONTACT US */
@@ -126,6 +189,7 @@ body {
 
 .foo-soc-img img {
     width: 100%;
+    min-width: 60px;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -192,7 +256,7 @@ body {
 }
 
 .footer-right-logo-cnt { /* 3 */
-    width: 20%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +264,7 @@ body {
 
 
 .footer-right-logo-cnt img {
-    max-width: 40%;
+    min-width: 60%;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
