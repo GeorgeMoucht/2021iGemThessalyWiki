@@ -9,6 +9,7 @@ body{
     background-color: rgb(3, 22, 65);
     display: flex;
     flex-direction: row;
+    justify-content: center;
     z-index: -100;
     box-shadow: 0px 30px 48px #888888;
     
@@ -46,7 +47,19 @@ body{
     .logo-under-720px{
         display: block;
     }
-
+    .right-main-ourstory{
+        width: 100%;
+    }
+    .background-circle3{
+        top: 70% !important;
+        right: 10% !important;
+    }
+    .right-main-ourstory-photos{
+        max-width: 80% !important;
+    }
+    .right-main-photo-gallery img{
+        width: 150px !important;
+    }
 }
 
 
@@ -60,7 +73,7 @@ body{
 }
 
 .right-main-ouridea{
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-top: 4rem;
     z-index: 1;
@@ -106,7 +119,7 @@ body{
 }
 
 .right-main-title-overview{
-    width: 80%;
+    width: 100%;
     height: auto;
     /* background: blue; */
     margin-top: 3.5rem;
@@ -231,7 +244,17 @@ body{
     padding-top:0px;
 }
 
+@media screen and (max-width: 535px){
+    .right-main-title-overview h1{
+        font-size: 30px;
+    }
+}
 
+@media screen and (max-width:420px){
+    .background-triangle3{
+        display: none;
+    }
+}
 
 /* HUMAN PRACTICES ABOVE CIRCLE */
 .pract{
@@ -330,7 +353,7 @@ body{
 }
 
 .right-main-ourstory{
-    width: 80%;
+    width: 100%;
     height: auto;
    /* background: blue;*/
     position: relative;
@@ -354,8 +377,18 @@ body{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
 }
+
+@media screen and (max-width: 1440px){
+    .right-main-ourstory{
+        width: 100%;
+    }
+    .right-main-ourstory-photos{
+        max-width: 80% !important;
+    }
+}
+
+
 
 .right-main-photo-gallery{
     margin: 1rem;
