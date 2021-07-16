@@ -55,6 +55,9 @@ body{
         top: 70% !important;
         right: 10% !important;
     }
+    .background-circle5{
+        right: -14.5% !important;
+    }
     .right-main-ourstory-photos{
         max-width: 80% !important;
     }
@@ -195,7 +198,8 @@ body{
 .background-circle5{
     position: absolute;
     right: 0;
-    bottom: -80%;
+    bottom: -20%;
+    z-index: -1;
 }
 
 .background-circle6{
@@ -531,4 +535,5 @@ body{
 
   .mega-page-cnt-dim{
       overflow-x: hidden;
+      overflow-y: hidden;
   }
