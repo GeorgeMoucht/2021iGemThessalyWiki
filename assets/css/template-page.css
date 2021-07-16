@@ -6,7 +6,8 @@ body{
 .mega-page-cnt-dim {
     width: 100%;
     height:auto;
-    background-color: rgb(3, 22, 65);
+    background-color: rgb(6, 9, 177);
+    background: linear-gradient(90deg, rgba(48,48,48,1) 0%, rgb(75, 82, 78) 75%, rgba(113,122,117,1) 100%, rgba(223,248,235,1) 100%); ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -301,7 +302,7 @@ body{
 }
 
 .videoouridea{
-    width: 100%;
+    width: 80%;
     height: 200px;
     background: aqua;
 }
