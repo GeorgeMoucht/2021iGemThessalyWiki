@@ -13,6 +13,10 @@ body {
     font-size: 28px;
 }
 
+body{
+    overflow-x: hidden !important;
+
+}
 
 /*----------- FOOTER--------------*/
 
@@ -44,27 +48,104 @@ body {
 
 
 .upperFooter-cnt {
-    width:85%;
-    height: 90%;
+    width:95%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 1rem;
+    justify-content: center;
+}
 
 
+
+
+
+
+
+
+.foo-soc-img a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-img-logo{
+    display: none;
+}
+
+@media screen and (max-width: 970px){
+    .upperFooter-cnt{
+        flex-direction: column;
+    }
+
+    .footer-sponsors-cnt {
+        width: 100% !important;
+    }
+
+    .footer-img-logo{
+        display: block;
+    }
+
+    .footer-right-logo-cnt img{
+        display: none;
+    }
+
+    .foo-soc-img img:hover{
+        animation-name:none;
+        animation-duration: 0s !important;
+    }
+
+     .flex-end a{
+        justify-content: flex-end;
+    }
+
+    .flex-start a{
+        justify-content: flex-start;
+    }
+    .social-footer-bottom-mobile{
+        display: block;
+        width: 100%;
+        height: auto;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 961px){
+    .social-footer-bottom-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footerLogo-cnt img{
+        width: 150% !important;
+
+    }
 }
 .fLogo-img {
     padding-right: 1rem;
-    
+    width: auto;
 }
 
+
 .footerLogo-cnt { /* 1 */
-    width: auto;
-    height: 90%;
+    width: 20%;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
+
+.footerLogo-cnt img{ /* 1 */
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 
 .yLine{
@@ -77,12 +158,11 @@ body {
     
 }
 .footer-contactInfo-cnt {
-    background-color:rgb(199, 199, 199);
-    height: 80%;
+    height: auto;
     width:auto;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -96,20 +176,37 @@ body {
   color: black;
   
 }
+/*-----Fix the media screen for CONTACT US on footer */
+@media screen and (max-width: 841px){
+    .footer-contactInfo-cnt h2 {
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    .footer-contactInfo-cnt h2 {
+        font-size: 1.5rem;
+    }
+}
+/*-----End of media fot CONTACT US */
+
+
+
+
 
 .footer-social {
-    min-width:80%;
-    height: 70%;
+    width: 100%;
+    height: 20px  !important;
     display: flex;
-    flex-direction:  row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-   
+    background-color: red;
 }
 
 
 .foo-soc-img img {
-    width: 100px;
+    width: 60%;
+    min-width: 60px;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -124,15 +221,15 @@ body {
 
 @keyframes LogoChange {
     0% {filter: grayscale(100%); transform: translate(0px, 0px);}
-    50% {filter: grayscale(100%); transform: translate(0px, -20px);}
+    50% {filter: grayscale(0%); transform: translate(0px, -20px);}
     100% {-webkit-filter: grayscale(0%);-ms-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(0%); transform: translate(0px, -20px);}
 
 }
 
 
 .footer-sponsors-cnt { /* 2 */
-    width: 41%;
-    height: 90%;
+    width: 60%;
+    height: auto;
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
@@ -144,6 +241,8 @@ body {
     width:100%; 
     height: auto;
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     
     align-items: center;
@@ -180,11 +279,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
 }
 
 
 .footer-right-logo-cnt img {
-    max-width: 40%;
+    min-width: 60%;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -194,20 +294,26 @@ body {
 /*-------------LOWER FOOTER--------------*/
     .lowerFooter {
         width: 100%;
-        height: 205px;
+        height: auto;
         background: rgb(46, 46, 46); 
         display: block;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        position: relative;
     }
    
 
     .lowerFooter-cnt {
+        width: 100%;
         height:auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: rgb(48,48,48);
+        background: linear-gradient(90deg, rgba(48,48,48,1) 0%, rgba(115,124,119,1) 75%, rgba(113,122,117,1) 100%, rgba(223,248,235,1) 100%); 
     }
 
     .quickmenu-cnt {
@@ -217,7 +323,8 @@ body {
         flex-direction: row;
         justify-content: center;
         color: rgb(194, 194, 194);
-        
+        margin-top: 1rem !important;
+        z-index: 5;
     }
     .quickmenu-cnt div{
         margin-right: 3rem;
@@ -230,6 +337,17 @@ body {
         list-style: none;
         margin-right: 5rem;
 
+    }
+
+    .social-footer-bottom{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        color: white;
     }
     
     @media only screen and (max-width:1380px) {
@@ -254,6 +372,24 @@ body {
         font-size: 20px;
     }
     
+    .footer-triangle-left{
+        position: absolute;
+        top: 50%;
+        left: -3%;
+        z-index: 1;
+    }
+
+    .footer-triangle-left img{
+        width: 150px;
+        height: auto;
+    }
+
+    .footer-triangle-right{
+        position: absolute;
+        top: 0%;
+        right: -8%;
+        transform: rotate(-40deg);
+    }
 
   /* ----------------------Slider --------------------------------*/
   .slick-slider
