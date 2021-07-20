@@ -312,6 +312,7 @@ body{
     background: aqua;
 }
 
+
 .right-main-ouridea-text p{
     font-size: 1.5rem;
     color: white;
@@ -478,26 +479,26 @@ body{
     opacity: 1;
     background-color: aqua;
     border: 1px solid rgba(0, 0, 0, 0.6);
-  }
+}
   
-  .bn54 .bn54span {
+.bn54 .bn54span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.7px;
-  }
-  
-  .bn54:hover {
+}
+
+.bn54:hover {
     animation: bn54rotate 0.7s ease-in-out both;
-  }
-  
-  .bn54:hover .bn54span {
+}
+
+.bn54:hover .bn54span {
     animation: bn54storm 0.7s ease-in-out both;
     animation-delay: 0.06s;
-  }
+}
   
-  @keyframes bn54rotate {
+@keyframes bn54rotate {
     0% {
       transform: rotate(0deg) translate3d(0, 0, 0);
     }
@@ -513,9 +514,9 @@ body{
     100% {
       transform: rotate(0deg) translate3d(0, 0, 0);
     }
-  }
+}
   
-  @keyframes bn54storm {
+@keyframes bn54storm {
     0% {
       transform: translate3d(0, 0, 0) translateZ(0);
     }
@@ -531,9 +532,25 @@ body{
     100% {
       transform: translate3d(0, 0, 0) translateZ(0);
     }
-  }
+}
 
-  .mega-page-cnt-dim{
+.mega-page-cnt-dim{
       overflow-x: hidden;
       overflow-y: hidden;
-  }
+}
+
+/*HP TASK INTEGRATED PEOPLE */
+.HP-integrated-slider-wrap {
+    width: 100%;
+    height: 500px;
+    background: aqua;
+}
+.HP-person-img img  {
+    height: 500px;
+  
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+}
+
+
