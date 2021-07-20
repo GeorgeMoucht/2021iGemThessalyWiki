@@ -1,0 +1,708 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Template-Page</title>
+
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <!--OUR Stylsheet rules-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/ToggleV_2.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/template-page.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/footerLast.css">
+        <!--END of Stylesheet rules-->
+        <!--==========================================================-->
+        <!--Press 2 start font awesome-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+        <!-- FOR TITLES-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@700&display=swap" rel="stylesheet">
+        <!--==========================================================-->
+    </head>
+    <body>
+        <!--PRELOADER-->
+        <!--
+        <div class="preloader" id="preloader">
+            <div id="text"></div>
+            <div class="r" id="textLoad"></div>
+        </div>
+    --> 
+        <!--Toggle NAV Bar-->       
+        <div id="toggleX" onclick="toggleMenu(this)" class="ct-tm  ">
+            <span class="menucirc1">
+
+            </span>
+            <div class="menuButton">
+                <h3>Menu</h3>
+            </div>
+            <div class="toggleX">
+                <div class="row1"></div>
+                <div class="row2"></div>
+                <div class="row3"></div>
+            </div>
+
+            <span class="menucirc2">
+
+            </span>
+
+        </div>
+
+        <div class="ToggleMenu">
+            <!-- The Modal -->
+            <div id="myModal" class="modal_v2" >
+        
+                    <!-- Modal content -->
+                    <div class="tg_v2">
+
+                        <span class="close"></span>
+                        <div class="modal-contentv2">
+                            <!-- Logo -->
+                            <div class="logomenuv2">
+                                <img src="assets/img/LogoAmal2021.jpg" width="130px">
+                            </div>
+
+
+                            <!------------------------------------------------------------------------------------------------------------------>
+
+                            <!-- Tablet/Mobile Links Box-->
+                            <div class="Mobilemodal-content-centeredv2">
+
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">About</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2 ">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Team</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Attribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Fun Stuff</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sponsors</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Project</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Description</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Engineering</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Safety</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Partnership</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sustainable</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Proof of Concept</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')"  class="menuTitle">Product Development</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Implementation</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Future Vision</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Entrepreneurship</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Wet Lab</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Contribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Experiments</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Parts</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Improvement</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Results</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2 ">
+                                    <div class="menuv2 ">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Dry Lab</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Model</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Software</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Hardware</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Mobilemodalcolv2">
+                                    <div class="menuv2">
+                                        <h3 onclick="this.parentElement.querySelector('#TextBox').classList.toggle('open')" class="menuTitle">Human Practices</h3>
+                                        <ul id="TextBox" class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Human Practices</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Education & Public <span style="padding: 1rem;">Engagement</span></span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Collaborations</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Mental Health</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!------------------------------ Desktop Links Box ------------------------------------------>
+                            <div class="Menu-Social-Col-Flex-Ct" >
+                                <div class="modal-content-centeredv2">
+
+                                <div class="modalcolv2">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">About</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2 ">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Team</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Attribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Fun Stuff</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sponsors</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Project</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Description</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Engineering</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Safety</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Partnership</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Sustainable</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Proof of Concept</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Product Development</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Implementation</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Future Vision</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Entrepreneurship</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2 ">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Wet Lab</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Contribution</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Experiments</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Parts</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Improvement</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Results</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2">
+                                    <div class="menuv2 ">
+                                        <h3 class="menuTitle">Dry Lab</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Model</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Software</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Hardware</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modalcolv2">
+                                    <div class="menuv2">
+                                        <h3 class="menuTitle">Human Practices</h3>
+                                        <ul class="menuUlv2 minusAnime">
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Human Practices</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Education & Public <span style="padding: 1rem;">Engagement</span></span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Collaborations</span></a>
+                                            </li>
+                                            <li class="menuUlv2">
+                                                <a onmouseover="circleAnimationIn()"  href=""><i>●</i><span>Mental Health</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="Moto-Social-ct">
+                                
+                                                                
+                                <div class="motocontainer">
+
+                                    <div class="moto1">
+                                        <p>"Prevention the best treatment"</p>
+                                    </div>
+                                    <div class="moto2">
+                                        <p>"We invent we engineer we pioneer"</p>
+                                    </div>
+
+                                </div> 
+                                
+                                <div class="social-container-menuv2">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/facebookColoredResized.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/intagramLogo-Resized.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/twitterLogo-Resized.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/igemthessaly/" target="black">
+                                                <img class="socialFacebook disp" src="assets/img/youtubeLogo-Resized.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+
+                            </div>
+                        </div>
+                        <div class="circlect">
+                            <span id="circle" class="circle"></span>
+                            <span id="circle2" class="circle2"></span>
+                            <span id="circle3" class="circle3"></span>  
+                        </div>
+                                              
+                    </div>
+                    <div class="blurEffect">
+                        <!-- Blur Effect -->
+                    </div>
+            </div> <!-- End Of Model -->
+        </div><!-- End Of ToggleMenu -->
+
+        <div class="mega-page-cnt-dim">
+            
+
+            <div class="left-sidebar-cnt-dim">
+
+                    <div class="left-sidebar-logo-cnt-dim">
+                        <img src="assets/img/LogoAmalth2021.png">
+                    </div>
+    
+                    <div class="left-sidebar-submenu">
+                            <p><strong><u>SUBmenu</u></strong></p>
+                            <p><a href="#first" id="link_1">SUBmenu</a></p>
+                            <p><a href="#second" id="link_2">SUBmenu</a></p>
+                            <p><a href="#third" id="link_3">SUBmenu</a></p>
+                            <p><a href="#fourth" id="link_4">SUBmenu</a></p>
+    
+                    </div>
+            </div>
+
+
+            <div class="right-main-content-cnt-dim">
+
+                <!-- Triangles and Circles on the Background -->
+                <span class="background-circle2"><img src="assets/img/final_ball_white_cropped.png"></span>
+                <span class="background-circle3"><img src="assets/img/circle1239.png.png"></span>
+                <span class="background-circle4"><img src="assets/img/circle9990.png"></span>
+                <span class="background-triangle1 triangle-size"><img src="assets/img/final_triangle_white.png"></span>
+                <span class="background-triangle2 triangle-size"><img src="assets/img/final_triangle_white.png"></span>
+                <span class="background-triangle3"><img src="assets/img/final_triangle_white.png"></span>
+
+                <!-- End of Triangles and Circles on the Background -->
+
+
+                <!-- 1 -->
+                <div class="right-main-title-overview" id="first">
+                    <div class="logo-under-720px">
+                        <img src="assets/img/hor-logo.png">
+                    </div>
+                    <span class="integrated"><h1><strong>INTEGRATED</strong></h1>
+                        <img class="background-circle1" src="assets/img/final_ball_white.png"> 
+                    </span>
+                    <h1>HUMAN <span class="pract">PRACTICES</span></h1>
+                    
+                    <div class="right-main-ct-overview">  
+                        <div class="right-main-overview">
+                            <h2><u>OVERVIEW</u></h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vitae odio reprehenderit at, officiis accusamus eveniet ut aliquam natus porro! Blanditiis ipsam vero quasi aspernatur ad dicta aliquid aliquam numquam?</p>
+                            <button class="button-overview"> BUTTON</button>
+                            <button class="button-overview2"> BUTTON</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 2 -->
+                <div class="right-main-ouridea" id="second">
+                    <h2><U>OUR IDEA</U></h2>
+                    <h1>MAIN TITLE</h1>
+                    <div class="videoouridea">
+                      <div class="hp-integrated-ct-img">
+                        <img class="HP-persons fade-in" src="assets/img/HP-Test-Images/person1.jpg">
+                      </div>
+                      <div class="hp-integrated-ct-text fade-in">
+                        <h5>CHECK OUR INTEGRATED</h5>
+                        <h3>Much Thanks to this people lorem lorem lorem lorem</h3> 
+                      </div>
+                                         <div class="b">
+                        
+                    </div>
+                    </div>
+
+                    <div class="right-main-ouridea-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolorem, accusamus error eligendi quos sit velit. Exercitationem similique neque voluptatibus fugiat sit, impedit, officia magni maxime fugit nihil assumenda voluptate. Lor</p>
+                        <button class="button-ouridea bn54"><span class="bn54span">BUTTON</span></button>
+                        <button class="button-ouridea2 bn54"><span class="bn54span">BUTTON</span></button>
+                    </div>
+
+                </div>
+
+                <!-- 3 -->
+                <div class="right-main-ourstory" id="third">
+                    <h1>OUR STORY</h1>
+                    <h3>IN PHOTOS</h3>
+                    <div class="right-main-ourstory-photos">
+                        <div class="right-main-photo-gallery hover-shadow">
+                            <img src="assets/img/img_avatar.png">
+                            <div class="overlay">My Name is Jeff</div>
+                        </div>
+                        <div class="right-main-photo-gallery hover-shadow">
+                            <img src="assets/img/img_avatar.png">
+                            <div class="overlay">My Name is Jeff</div>
+                        </div>
+                        <div class="right-main-photo-gallery hover-shadow">
+                            <img src="assets/img/img_avatar.png">
+                            <div class="overlay">My Name is Jeff</div>
+                        </div>
+                        <div class="right-main-photo-gallery hover-shadow">
+                            <img src="assets/img/img_avatar.png">
+                            <div class="overlay">My Name is Jeff</div>
+                        </div>
+                        <div class="right-main-photo-gallery hover-shadow">
+                            <img src="assets/img/img_avatar.png">
+                            <div class="overlay">My Name is Jeff</div>
+                        </div>
+                        <div class="right-main-photo-gallery hover-shadow">
+                            <img src="assets/img/img_avatar.png">
+                            <div class="overlay">My Name is Jeff</div>
+                        </div>
+                        <span class="background-circle5"><img src="assets/img/circle9990.png"></span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- SECOND MAIN PAGE  -->
+        <div class="mega-page-cnt-dim2" id="fourth">
+            <div class="side-bar-dim2"></div>
+            <div class="main-content-ct-dim2">
+                <div class="main-content-dim2">
+                    <p><strong><h1>THE BIG CHANGE</h1></strong></p>
+                    <h3>DR ALEXANDRA MEZITI</h3>
+                    <div class="main-content-vid-dim2">
+                        <video src="assets/img/evozyne-hp-landscape.mp4" width="100%" height="100%"></video>
+                    </div>
+                    <span>
+                        <span class="background-circle6"><img src="assets/img/circle1239.png.png"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit consequuntur ipsam nisi ut eius, voluptate quia aperiam error veritatis accusantium, quis ab sapiente delectus, fugiat vitae iure reprehenderit iusto.</p>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Footer for desktops-->
+        <!--Horizonal line on x axe, before the upperFooter.-->
+        <footer>
+            <div class="horizonal-line"></div>
+            <div class="footerWrapper">
+                <!-- upper footer with team logo and sponsors-->
+                <div class="upperFooter">
+                    <div class="upperFooter-cnt">
+                        <div class="footerLogo-cnt">
+                            
+                                <img class="fly-logo-footer" src="assets/img/fly-thessaly-logo .png" width="250px" height="200px">
+                            
+                            <!-- line on y axe.-->
+
+                        </div>
+
+                        <div class="footer-sponsors-cnt">
+                            <div class="footer-sponsors-big">
+                                <div class="sponsors-big-img">
+                                    <img src="assets/img/sponsorsLogo/phizer-logo-resized.png">
+                                </div>
+                                <div class="sponsors-big-img">
+                                    <img src="assets/img/sponsorsLogo/logo_EPSILON-HEALTH_square_200px.png">
+                                </div>
+                                <div class="sponsors-big-img">
+                                    <img src="assets/img/sponsorsLogo/Hnet.com-image.png">
+                                </div>
+                                <div class="sponsors-big-img">
+                                    <img src="assets/img/sponsorsLogo/ethniki-asfalistiki.png">
+                                </div>
+                            </div>
+                            <div class="footer-sponsors-slide">
+                                <div class="footer-sponsors-small">
+                                    <img src="assets/img/sponsorsLogo/ZAGORIN final.png">
+                                </div>
+                                <div class="footer-sponsors-small">
+                                    <img src="assets/img/sponsorsLogo/chiplogo.jpg" width="85%;">
+                                </div>
+                                <div class="footer-sponsors-small">
+                                    <img src="assets/img/sponsorsLogo/phizer-logo-resized.png">
+                                </div>
+                                <div class="footer-sponsors-small">
+                                    <img src="assets/img/sponsorsLogo/phizer-logo-resized.png">
+                                </div>
+                                <div class="footer-sponsors-small">
+                                    <img src="assets/img/sponsorsLogo/phizer-logo-resized.png">
+                                </div>
+                                <div class="footer-sponsors-small">
+                                    <img src="assets/img/sponsorsLogo/phizer-logo-resized.png">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-right-logo-cnt">
+                            <img src="assets/img/logo_for_layering_small.svg" width="250px" height="200px">
+                        </div>
+                        
+                        <div class="social-footer-bottom-mobile">
+                            <h2>Contact Us</h2>
+                            <div class="footer-contactInfo-cnt">
+                                <div class="foo-soc-img"><a href="https://www.facebook.com/igemthessaly/" target="blank"><img src="assets/img/facebookColoredResized.png" ></a></div>
+                                <div class="foo-soc-img"><a href="https://www.instagram.com/igemthessaly/?hl=el" target="blank"><img src="assets/img/intagramLogo-Resized.png"></a></div>
+                                <div class="foo-soc-img "><a href="https://twitter.com/igemthessaly?lang=el" target="blank"><img src="assets/img/twitterLogo-Resized.png"></a></div>
+                                <div class="foo-soc-img "><a href="https://www.youtube.com/channel/UCBHXzFL7r9xxHxqQICznphA" target="blank"><img src="assets/img/youtubeLogo-Resized.png"></a></div>
+                            </div>
+                        </div>
+                </div>
+
+
+                
+            </div>
+            <div class="lowerFooter">
+
+                <div class="lowerFooter-cnt">
+                    <div class="footer-triangle-left">
+                        <img src="assets/img/final_triangle_blue.png">
+                    </div>
+                    <div class="footer-triangle-right">
+                        <img src="assets/img/final_triangle_blue.png">
+                    </div>
+                    <div class="quickmenu-cnt">
+                        <div>
+                            <h2>About</h2>
+                            <ul id="projectList">
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Description">Team</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Implementation">Attribution</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Contribution">Fun Stuff</a></li>
+                                <li><a href="https://2020.igem.org/Team:visibleVilnius-Lithuania/Graphic_Design">Sponsors</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Project</h2>
+                            <ul id="projectList">
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Description">Description</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Implementation">Engineering</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Contribution">Safety</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Graphic_Design">Partnership</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Awards">Sustainable</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Awards">Proof of Concept</a></li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Product development</h2>
+                            <ul id="wetLab">
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Design">Implementation</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Experiments">Future Vision</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Results">Entrepreneurship</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Wet lab</h2>
+                            <ul id="dryLab">
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Model">Contribution</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Software">Experiments</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Hardware">Parts</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Measurement">Improvement</a></li>
+                                <li><a href="https://2020.igem.org/Team:Vilnius-Lithuania/Measurement">Results</a></li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Dry lab</h2>
+                            <ul id="hpList">
+                                <li>
+                                    <a href="https://2020.igem.org/Team:Vilnius-Lithuania/Human_Practices">Model</a>
+                                </li>
+                                <li>
+                                    <a href="https://2020.igem.org/Team:Vilnius-Lithuania/Education">Software</a>
+                                </li>
+                                <li>
+                                    <a href="https://2020.igem.org/Team:Vilnius-Lithuania/The_6th_SynBio_Sense">Hardware</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Human practices</h2>
+                            <ul id="teamList">
+                                <li>
+                                    <a href="https://2020.igem.org/Team:Vilnius-Lithuania/Team">Human Practices</a>
+                                </li>
+                                <li>
+                                    <a href="https://2020.igem.org/Team:Vilnius-Lithuania/Collaborations">Education & Public Engagement</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://2020.igem.org/Team:Vilnius-Lithuania/Attributions">Collaborations</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://2020.igem.org/Team:Vilnius-Lithuania/Attributions">Mental Health</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-footer-bottom">
+                        <h2>Contact Us</h2>
+                        <div class="footer-contactInfo-cnt">
+                            <div class="foo-soc-img"><a href="https://www.facebook.com/igemthessaly/" target="blank"><img src="assets/img/facebookColoredResized.png" ></a></div>
+                            <div class="foo-soc-img"><a href="https://www.instagram.com/igemthessaly/?hl=el" target="blank"><img src="assets/img/intagramLogo-Resized.png"></a></div>
+                            <div class="foo-soc-img "><a href="https://twitter.com/igemthessaly?lang=el" target="blank"><img src="assets/img/twitterLogo-Resized.png"></a></div>
+                            <div class="foo-soc-img "><a href="https://www.youtube.com/channel/UCBHXzFL7r9xxHxqQICznphA" target="blank"><img src="assets/img/youtubeLogo-Resized.png"></a></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+        </footer>
+
+
+
+
+        <!--jQuerry / pace js / tweenmax-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--Main.js-->
+         <script src="assets/js/main.js"></script>
+         <!--Observers-->
+         <script src="assets/js/observers.js"></script>
+         <!-- Toggle menu transform X-->
+         <script src="assets/js/ToggleMenu.js"></script>
+         <!--PreLoader-->
+        <script src="assets/js/preLoader.js"></script>
+        <!--Footer scrpits-->
+        <script  src="assets/js/slick.min.js"></script>
+        <script  src="assets/js/slick-costum.js"></script>
+        <!-- Side Bar Navigation --> 
+        <script src="assets/js/sidebar-navigation.js"></script>
+        <!--ScrollR lib-->
+        <script src="assets/js/skrollr.js"></script>
+        <script src="assets/js/skrollr-init.js">  </script>
+    </body>
+</html> 
