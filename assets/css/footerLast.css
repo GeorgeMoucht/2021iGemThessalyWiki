@@ -227,7 +227,7 @@ body{
 }
 
 
-.footer-sponsors-cnt { /* 2 */
+.footer-sponsors-cnt { 
     width: 60%;
     height: auto;
     margin-left: 1rem;
@@ -244,7 +244,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    
     align-items: center;
 }
 
@@ -254,9 +253,10 @@ body{
 
 
 .footer-sponsors-slide { 
-        width: 100%;
+    width: 100%;
     padding-left: 4rem;
     height: auto;
+    position: relative;
 }
 
 .multiple-items{
@@ -274,7 +274,7 @@ body{
     width: 50%;
 }
 
-.footer-right-logo-cnt { /* 3 */
+.footer-right-logo-cnt { 
     width: 20%;
     display: flex;
     align-items: center;

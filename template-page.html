@@ -26,13 +26,16 @@
     </head>
     <body>
         <!--PRELOADER-->
-        <!--
+        
         <div class="preloader" id="preloader">
             <div id="text"></div>
             <div class="r" id="textLoad"></div>
         </div>
-    --> 
-        <!--Toggle NAV Bar-->       
+    
+        <!--Toggle NAV Bar-->
+        <!-- Scroll bar-->
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>       
         <div id="toggleX" onclick="toggleMenu(this)" class="ct-tm  ">
             <span class="menucirc1">
 
@@ -377,11 +380,15 @@
 
             <div class="left-sidebar-cnt-dim">
 
-                    <div class="left-sidebar-logo-cnt-dim">
+                    <div class="left-sidebar-logo-cnt-dim"
+                    data-1500="opacity:1;"
+                    data-1600="opacity:0;">
                         <img src="assets/img/LogoAmalth2021.png">
                     </div>
     
-                    <div class="left-sidebar-submenu">
+                    <div class="left-sidebar-submenu"
+                    data-1500="opacity:1;"
+                    data-1700="opacity:0;">
                             <p><strong><u>SUBmenu</u></strong></p>
                             <p><a href="#first" id="link_1">SUBmenu</a></p>
                             <p><a href="#second" id="link_2">SUBmenu</a></p>
@@ -507,9 +514,12 @@
                 <!-- upper footer with team logo and sponsors-->
                 <div class="upperFooter">
                     <div class="upperFooter-cnt">
-                        <div class="footerLogo-cnt">
+                        <div class="footerLogo-cnt"
+                        data-1500="opacity:0;"
+                        data-1600="opacity:1;">
                             
-                                <img class="fly-logo-footer" src="assets/img/fly-thessaly-logo .png" width="250px" height="200px">
+                            <img src="assets/img/logo_for_layering_small.svg" width="250px" height="200px">
+
                             
                             <!-- line on y axe.-->
 
@@ -553,7 +563,8 @@
                         </div>
                         
                         <div class="footer-right-logo-cnt">
-                            <img src="assets/img/logo_for_layering_small.svg" width="250px" height="200px">
+                            <img class="fly-logo-footer" src="assets/img/fly-thessaly-logo .png" width="250px" height="200px">
+
                         </div>
                         
                         <div class="social-footer-bottom-mobile">
@@ -687,5 +698,33 @@
         <script  src="assets/js/slick-costum.js"></script>
         <!-- Side Bar Navigation --> 
         <script src="assets/js/sidebar-navigation.js"></script>
+        <!-- Scrollr -->
+        <script src="assets/js/skrollr.js"></script>
+        <script src="assets/js/skrollr-init.js"></script>
+
+        <!-- Progress Bar -->
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {ProgressBar()};
+            
+            function ProgressBar() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.height = scrolled + "%";
+            }
+        </script>
+
+        <!--SCript for SCROLLBARR-->
+        <script type="text/javascript">
+
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function (){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + '%';
+            }
+        </script>
+            
     </body>
 </html> 

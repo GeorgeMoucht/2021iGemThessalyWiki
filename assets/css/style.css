@@ -300,8 +300,7 @@ background: linear-gradient(90deg, rgba(254,245,180,1) 0%, rgb(247, 247, 247) 25
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
- 
+    cursor: url('../img/bacteria_layer4\ cursor\ \(1\).svg') , auto;
 }
 
 

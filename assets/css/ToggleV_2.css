@@ -2,28 +2,63 @@
 /*1. Scroll bar */
 
 
-/*---------------- SCROLL BAR ---------------------*/
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.664); 
-    border-radius: 4px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: grey;
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
-  }
+    /*---------------- SCROLL BAR --------------------*/
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 100%;
+        background: rgba(255,255,255,0.05);
+
+    }
+    #progressbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: red;
+        animation: animate 5s linear infinite;
+        z-index: 20;
+    }
+    
+    @keyframes animate
+    {
+        0%,100%
+        {
+            filter: hue-rotate(0deg);
+        }
+        50%
+        {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    #progressbar:before {
+        content: '';
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:orange;
+        filter: blur(10px);
+
+    }
+    #progressbar:after {
+        content: '';
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:orange;
+        filter: blur(30px);
+        
+    }
 
   /*-------------------- End Scroll Bar -------------------------------*/
 
@@ -38,8 +73,8 @@
     height: 100vh; /* Full height */
 }
 .tg_v2{
-    background: rgb(96,239,255);
-    background: linear-gradient(90deg, rgba(96,239,255,1) 0%, rgba(254,245,180,1) 100%); 
+    background: rgb(0,97,255);
+    background: radial-gradient(circle, rgba(0,97,255,1) 0%, rgba(97,179,255,1) 100%);
     width: 100vw;
     height: 100vh;
     padding-top: 30px ;
@@ -51,14 +86,16 @@
 .circlect{
     width: 100vw;
     height: 100vh;
+    background: rgb(0,97,255);
+    background: radial-gradient(circle, rgba(0,97,255,1) 0%, rgba(97,179,255,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .circle {
 	position: absolute;
-    background: rgb(130,242,255);
-    background: linear-gradient(90deg, rgba(130,242,255,1) 0%, rgba(255,247,185,1) 100%);
+    background-color: white;
+    opacity: 0.25;
 	width: 80%; 
     height: auto;
     padding-top: 80%; 
@@ -70,8 +107,8 @@
 
 .circle2 {
 	position: absolute;
-    background: rgb(130,242,255);
-    background: linear-gradient(270deg, rgba(130,242,255,0.50) 0%, rgba(255,247,185,0.50) 100%);
+    background-color: white;
+    opacity: 0.25;
 	width: 60%; 
     height: auto; 
     padding-top: 60%;
@@ -85,8 +122,8 @@
 
 .circle3 {
 	position: absolute;
-    background: rgb(130,242,255);
-    background: linear-gradient(90deg, rgba(130,242,255,0.25) 0%, rgba(255,247,185,0.25) 100%);
+    background-color: white;
+    opacity: 0.25;
 	width: 40%; 
     height: auto; 
     padding-top: 40%;
@@ -121,7 +158,6 @@
     width: 85%;
     min-height: 55%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -135,7 +171,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 9rem;
     z-index: -1;
 } 
 

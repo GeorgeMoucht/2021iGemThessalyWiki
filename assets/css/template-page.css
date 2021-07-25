@@ -1,6 +1,7 @@
 body{
     overflow-x: hidden;
     background: white !important;
+    margin-top: 16px !important;
 }
 
 .mega-page-cnt-dim {
@@ -87,10 +88,12 @@ body{
 
 
 .left-sidebar-logo-cnt-dim{
-    width: 100%;
+    width: 20%;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    position: fixed;
+    z-index: 5;
 }
 
 
@@ -102,20 +105,17 @@ body{
 }
 
 .left-sidebar-submenu{
-    margin-top: 1rem;
+    margin-top: 16rem;
     width: 10vw;
     height: 20%;
     left: 5%;
-    color: white;
+    color: white !important;
     position: fixed;
     z-index: 5;
-    opacity: 0.8;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: black;
-    border: 2px solid aqua;
+    mix-blend-mode: difference;
 }
 
 footer{
@@ -134,12 +134,15 @@ footer{
 
 .left-sidebar-submenu a{
     text-decoration: none;
-    color: aqua !important;
+    color: white !important;
+    text-align: left;
 }
 
 .left-sidebar-submenu a.active{
     padding-right: 1rem;
-    border-right: 3px solid orange;
+    border-right: 3px solid white;
+    color: silver !important;
+    font-size: 1.3rem;
 }
 
 .right-main-title-overview{
@@ -452,11 +455,11 @@ footer{
 .mega-page-cnt-dim2{
     width: 100%;
     height: auto;
-    background: transparent;
+    background: white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 4rem;
+
 }
 
 .side-bar-dim2{
